@@ -15,12 +15,9 @@
 
 const Route = use('Route')
 
-Route.get('/mine/:bloc', 'BlockController.mine')
+Route.post('/receive', 'RobotController.receive')
 
-Route.get('/mineurs', 'BlockController.getMineurs')
-
-Route.get('/block', 'BlockController.get')
-
-Route.post('/receive', 'BlockController.receive')
+Route.get('/updateLastKeyboardInput','RobotController.updateLastKeyboardInput')
 
 Route.any('*', 'NuxtController.render')
+
