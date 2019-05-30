@@ -15,7 +15,7 @@
 
 const Route = use('Route')
 
-Route.post('/receive', 'RobotController.receive')
+Route.get('/receive', 'RobotController.receive')
 
 Route.get('/updateLastKeyboardInput','RobotController.updateLastKeyboardInput')
 
